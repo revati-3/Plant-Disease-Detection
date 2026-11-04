@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+   
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(77, 76, 76, 0.5)),
+    url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Wr3ZbMF7bVFP56eMaNqS4nwJpdvmBN1H7g&s) no-repeat center/cover;
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background: rgba(66, 103, 31, 0.3);*/
+   /* backdrop-filter: blur(10px);*/
+    z-index: 1000;
+}
+
+/* Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.nav-links li a:hover {
+    color: #a8e063;
+}
+
+
+/* Container */
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Card */
+.login-card {
+    /*background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);*/
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    color: white;
+}
+
+/* Logo */
+.logo {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+/* Password box */
+.password-box {
+    position: relative;
+}
+
+.password-box span {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    cursor: pointer;
+}
+
+/* Options */
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 15px;
+    color: black;
+}
+.options a {
+    color: white;
+}
+
+.options a:hover {
+    color: #a00707;
+    text-decoration: underline;
+}
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #56ab2f;
+    color: white;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #7ddf4c;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .login-card {
+        padding: 20px;
+    }
+}

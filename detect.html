@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detect Disease</title>
+<link rel="stylesheet" href="detect.css">
+
+<style>
+    body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0f2027;
+    color: white;
+    text-align: center;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;   /* 🔥 ADD THIS */
+}
+
+/* Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.nav-links li a:hover {
+    color: #a8e063;
+}
+
+
+.detect-container {
+    margin-top: 100px;
+}
+
+input {
+    margin: 20px;
+}
+
+#preview {
+    width: 250px;
+    height: auto;
+    display: none;
+    margin: 20px auto;
+}
+
+button {
+    padding: 10px 20px;
+    background: #56ab2f;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">🌿 PlantCare</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="detect.html">Detect</a></li>
+    </ul>
+</nav>
+
+<!-- Detect Section -->
+<div class="detect-container">
+
+    <h2>Plant Disease Detection</h2>
+
+    <!-- Upload -->
+    <input type="file" id="imageInput" accept="image/*">
+
+    <!-- Preview -->
+    <img id="preview" src="" alt="Image Preview">
+
+    <!-- Button -->
+    <button onclick="detectDisease()">Detect Disease</button>
+
+    <!-- Result -->
+    <h3 id="result"></h3>
+
+</div>
+
+<script src="detect.js"></script>
+
+</body>
+</html>

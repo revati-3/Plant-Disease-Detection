@@ -1,0 +1,181 @@
+/* Reset
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;              /* 🔥 ADD */
+    width: 100%;
+    padding: 15px 30px;  /* थोडं कमी करा */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;   /* 🔥 MOST IMPORTANT */
+}
+
+/* Logo */
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #a8e063;
+}
+
+/* Links */
+.nav-links {
+    list-style: none;   /* 🔥 removes black dots */
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.nav-links li a:hover {
+    color: #a8e063;
+}
+
+/* Fix content overlap */
+.hero {
+    padding-top: 80px;
+}
+body, html {
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    height: 100%;
+    color: white;
+}
+
+
+/* Background */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(77, 76, 76, 0.5)),
+    url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Wr3ZbMF7bVFP56eMaNqS4nwJpdvmBN1H7g&s) no-repeat center/cover;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.welcome h2 {
+    font-size: 36px;
+    margin: 5px 0;
+    color: white;
+}
+
+.leaf {
+    font-size: 24px;
+}
+
+.decor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.decor span {
+    width: 60px;
+    height: 2px;
+    background: #a8e063;
+}
+
+.decor .dot {
+    width: 8px;
+    height: 8px;
+    background: #a8e063;
+    border-radius: 50%;
+}
+
+/* Card */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    padding: 40px;
+    border-radius: 20px;
+    width: 380px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+}
+
+/* Icon */
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Heading */
+.card h1 {
+    margin: 10px 0;
+}
+
+.card span {
+    color: #a8e063;
+}
+
+/* Text */
+.card p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Upload Box */
+.upload-box {
+    border: 2px dashed #a8e063;
+    padding: 20px;
+    border-radius: 12px;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.upload-box input {
+    display: none;
+}
+
+/* Button */
+button {
+    padding: 12px 25px;
+    border: none;
+    background: #56ab2f;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #7ddf4c;
+    transform: scale(1.05);
+}
+
+/* Features */
+.features {
+    margin-top: 30px;
+    display: flex;
+    gap: 40px;
+    text-align: center;
+    color: white;
+}
+
+.features div {
+    font-size: 14px;
+}
